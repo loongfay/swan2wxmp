@@ -1,0 +1,32 @@
+<view wx:if="{{condition}}"></view>
+<view wx:if="{{condition}}" wx:for-item="item" wx:for-index="index" wx:for="{{list}}">test</view>
+<view wx:if="{{condition}}" wx:for-item="namedItem" wx:for-index="namedIndex" wx:for="{{list}}" wx:key="namedIndex">test</view>
+<view wx:for-item="item" wx:for-index="index" wx:for="{{list}}"><block wx:if="{{item}}">test</block></view>
+<template is="head" data="{{item}}" />
+<template is="head" data="{{...item}}" />
+<template is="head" data="{{name: 'hello'}}" />
+<view class='red {{flag ? "blue" : "yellow"}}'></view>
+<view wx:if="{{false}}" class="time"></view>
+<view wx:elif="{{false}}"></view>
+<view style="top: {{flag ? '20rpx' : '40rpx'}}">hello</view>
+<input value="{{1}}" />
+<input value="1" />
+<textarea value="{{1}}"></textarea>
+<scroll-view scroll-top="{{0}}" scroll-left="{{0}}" scroll-into-view="{{test}}"></scroll-view>
+<movable-view x="{{1}}" y="{{1}}"></movable-view>
+<slider value="{{1}}"></slider>
+<list />
+<hello-world />
+<table-head />
+<normal />
+<with1 />
+<include src="./test.wxml" />
+<include src="./test.wxml" />
+<import src="./test.wxml" />
+<import src="./test.wxml" />
+<view></view>
+<view>test</view>
+<view>test</view>
+<view class="test" style="background: url(https://img0.sc115.com/uploads1/sc/jpgs/1510/apic15069_sc115.com.jpg)"></view>
+<button testontap="ontap" bindtap="ontap">点击</button>
+

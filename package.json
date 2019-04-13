@@ -1,0 +1,29 @@
+{
+  "name": "swan2wxmp",
+  "version": "1.0.0",
+  "description": "transform swan to wxmp",
+  "main": "index.js",
+  "scripts": {
+    "test": "node bin/cli.js"
+  },
+  "author": "zhaolongfei@baidu.com",
+  "license": "ISC",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "co": "^4.6.0",
+    "fs-extra": "^7.0.1",
+    "mkdirp": "^0.5.1",
+    "path": "^0.12.7",
+    "recursive-copy": "^2.0.9",
+    "regexgen": "^1.3.0",
+    "stricter-htmlparser2": "^3.9.6",
+    "unified": "^7.1.0",
+    "vfile": "^3.0.1"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
