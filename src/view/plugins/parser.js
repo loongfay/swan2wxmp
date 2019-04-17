@@ -39,13 +39,9 @@ module.exports.parser = function parser(options) {
     this.Parser = parser;
 
     function parser(doc) {
-        // console.log('--------------->getHtmlParser:', doc)
-
         const {htmlParser, handler} = exports.getHtmlParser(options);
 
         htmlParser.end(doc);
-
-        // console.log('--------------->getHtmlParser222:', JSON.stringify(handler.dom))
 
         return {
             type: 'tag',

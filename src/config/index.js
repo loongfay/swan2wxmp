@@ -11,8 +11,6 @@ const chalk = require('chalk');
 const detectIntent = require('detect-indent');
 
 const utils = require('../lib/utils');
-const componentConf = require('../../config/wxmp2swan/component');
-const log = require('../util/log');
 const path = require('path');
 
 
@@ -104,23 +102,3 @@ module.exports.transformConfig = function* transformConfig(context) {
     }
     console.log(chalk.cyan('👉    Successfully transform config file'));
 };
-
-/**
- * 自定义组件中不支持的属性打印error日志
- *
- * @param {string} json 自定义组件json配置
- * @param {string} path 文件路径
- */
-// function componentLog(json, path) {
-//     // 处理自定义组件json中不支持的属性
-//     Object.keys(componentConf.json).forEach(attr => {
-//         const confValue = componentConf.json[attr];
-//         if (confValue === null && json[attr]) {
-//             log.logger({
-//                 type: 'Compsonent json',
-//                 file: path && path,
-//                 message: `自定义组件---json[${attr}]: ${'不支持的属性'}`
-//             }, 'error');
-//         }
-//     });
-// }

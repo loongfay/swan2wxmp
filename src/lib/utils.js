@@ -44,7 +44,6 @@ function copyDirectory(fromPath, toPath) {
         dot: false,
         junk: false,
         rename(filePath) {
-            // console.log('file path in:------>', filePath)
             return renameFileExt(filePath);
         }
     };
@@ -52,7 +51,6 @@ function copyDirectory(fromPath, toPath) {
     const arr = [];
 
     for (let i = 0; i < lists.length; i++) {
-        // console.log('file path:===>', lists[i])
         arr.push(
             recursiveCopy(
                 path.join(fromPath, lists[i]),
@@ -184,8 +182,6 @@ exports.object2String = function (obj) {
  * @return {VFile}
  */
 exports.toVFile = function (filePath, contents) {
-    // console.log('toVFile=========')
-
     const file = vfile({path: filePath, contents: contents});
     const related = {
         style: 'css',
@@ -204,7 +200,6 @@ exports.toVFile = function (filePath, contents) {
                     const filePath = path.resolve(cwd, dirname, stem + ext);
                     fs.existsSync(filePath) && (prev[type] = filePath);
                 }
-                // console.log('prev=========', prev)
                 return prev;
             },
             {}
