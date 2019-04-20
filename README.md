@@ -5,7 +5,7 @@
 npm install -g swan2wxmp
 
 ## 使用方法
-swan2wxmp /path/to/swanDir /path/to/wxdDir
+swan2wxmp /path/to/swanDir /path/to/wxDir
 
 ## 示例
 swan2wxmp ./swanDemo/ ./wxDemo/
