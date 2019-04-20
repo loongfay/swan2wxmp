@@ -8,9 +8,6 @@
   },
   "author": "zhaolongfei@baidu.com",
   "license": "ISC",
-  "jest": {
-    "testEnvironment": "node"
-  },
   "dependencies": {
     "chalk": "^2.4.1",
     "co": "^4.6.0",
@@ -23,7 +20,12 @@
     "unified": "^7.1.0",
     "vfile": "^3.0.1"
   },
-  "devDependencies": {
-    "jest": "^23.6.0"
-  }
+  "keywords": [
+    "swan",
+    "wx",
+    "mp",
+    "miniprogram",
+    "swan2wxmp",
+    "transform"
+  ]
 }
