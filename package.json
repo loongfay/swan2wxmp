@@ -1,6 +1,6 @@
 {
   "name": "swan2wxmp",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "transform swan to wxmp",
   "main": "index.js",
   "scripts": {
