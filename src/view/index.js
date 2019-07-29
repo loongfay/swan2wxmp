@@ -1,6 +1,6 @@
 /**
  * @file wxml convert swan
- * @author yican, hiby
+ * @author zhaolongfei
  */
 
 'use strict';

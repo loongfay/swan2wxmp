@@ -1,6 +1,6 @@
 /**
  * @file transform json
- * @author hiby
+ * @author zhaolongfei
  */
 
 'use strict';

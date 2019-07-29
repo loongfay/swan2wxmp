@@ -1,8 +1,6 @@
 /**
- * 视图内容解析为ast
- *
  * @file 视图内容解析为ast
- * @author yican, hiby
+ * @author zhaolongfei
  */
 
 'use strict';

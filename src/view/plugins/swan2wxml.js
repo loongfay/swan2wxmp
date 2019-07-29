@@ -1,8 +1,6 @@
 /**
- * wxml to swan转换插件
- *
  * @file wxml to swan转换插件
- * @author yican, hiby
+ * @author zhaolongfei
  */
 
 'use strict';

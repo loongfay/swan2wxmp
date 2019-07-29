@@ -1,8 +1,6 @@
 /**
- * 视图ast序列化插件
- *
  * @file 视图ast序列化插件
- * @author yican, hiby
+ * @author zhaolongfei
  */
 
 'use strict';

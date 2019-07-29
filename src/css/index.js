@@ -1,6 +1,6 @@
 /**
  * @file wxss convert css
- * @author yican
+ * @author zhaolongfei
  */
 
 const glob = require('glob');
