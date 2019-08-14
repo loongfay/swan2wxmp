@@ -1,6 +1,11 @@
 swan.navigateTo({
     url: '../logs/logs'
 });
+
+swan.navigateToSmartProgram();
+swan.login();
+swan.ocrIdCard();
+
 const name = 'yican';
 
 // test api exist check in logical expression

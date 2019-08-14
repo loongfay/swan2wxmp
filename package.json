@@ -27,5 +27,8 @@
     "miniprogram",
     "swan2wxmp",
     "transform"
-  ]
+  ],
+  "devDependencies": {
+    "wx2swan": "^1.2.20"
+  }
 }

@@ -54,8 +54,8 @@ if (argv._.length < 1) {
 
     process.exit(1);
 } else {
-    const fromPath = path.resolve(argv._[0]);
-    const toPath = argv._[1] ? path.resolve(argv._[1]) : null;
+    const fromPath = path.resolve(argv._[0]);//path.resolve('../test/swan/')//
+    const toPath = argv._[1] ? path.resolve(argv._[1]) : null;//path.resolve('../test/wx/')//
     const logPath = argv._[2] ? path.resolve(argv._[2]) : null;
 
     swan2wxmp({type: 'swan2wxmp', src: fromPath, dist: toPath, log: logPath}, function (err, logs) {

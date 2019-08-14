@@ -1,6 +1,11 @@
 wx.navigateTo({
   url: '../logs/logs'
 });
+
+wx.navigateToMiniProgram(1);
+wx.login(1);
+wx.ocrIdCard(1);
+
 const name = 'yican';
 
 // test api exist check in logical expression
@@ -9,8 +14,8 @@ if (wx.checkIsSupportSoterAuthentication != null && true) {
 }
 
 // test wx as function arg
-Object.create(wx, {});
-console.log(1, wx);
+Object.create(swan, {});
+console.log(1, swan);
 
 // test UnaryExpression
 if (!wx.checkIsSupportSoterAuthentication) {
@@ -20,11 +25,11 @@ if (typeof wx.checkIsSupportSoterAuthentication !== 'function') {
   console.log(true);
 }
 
-const wx = {};
-for (const key in wx) {
+const swan = {};
+for (const key in swan) {
   console.log(`wx${key}:`, wx[key]);
 }
-while (wx) {
+while (swan) {
   console.log(`wx${key}:`, wx[key]);
 }
 

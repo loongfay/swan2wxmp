@@ -14,7 +14,7 @@ const path = require('path');
 
 const api = require('./conf').api;
 
-
+let flag = false;
 exports.transformContent = function transformViewContent(content, api, beforeCtx, afterCtx, file) {
     const ast = babylon.parse(content, {
         sourceType: 'module',
@@ -24,9 +24,24 @@ exports.transformContent = function transformViewContent(content, api, beforeCtx
 
     // 转换api接口
     traverse(ast, {
-        Identifier(path) {
-            if (path.node.name === beforeCtx) {
-                path.node.name = afterCtx;
+        // Identifier(path) {
+        //     if (path.node.name === beforeCtx) {
+        //         path.node.name = afterCtx;
+        //     }
+        // },
+        MemberExpression(path) {
+            if (path.node.object.name === beforeCtx) {
+                path.node.object.name = afterCtx;
+            }
+            const prop = path.node.property.name;
+            if (api[prop] === null) {
+                console.log(chalk.red(`api:${prop} 在微信环境下不支持！`));
+            } else if (api[prop]) {
+                if (api[prop].msg) {
+                    console.log(chalk.yellow(api[prop].msg));
+                } else if (api[prop].mapping) {
+                    path.node.property.name = api[prop].mapping;
+                }
             }
         }
     });
